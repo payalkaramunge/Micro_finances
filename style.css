@@ -1,0 +1,22 @@
+.onebtn{
+    color: brown;
+    width: 100%;
+    background-color: aquamarine;
+}
+.bg-color{
+    background: rgb(147,139,255);
+    background: linear-gradient(172deg, rgba(147,139,255,1) 22%, rgba(208,230,236,1) 23%, rgba(136,127,255,1) 56%, rgba(41,190,222,1) 56%, rgba(230,165,255,1) 80%, rgba(217,144,222,1) 80%);
+}
+.user-name{
+height: 50px;
+}
+body{
+    background: rgb(221,237,249);
+    background: linear-gradient(267deg, rgba(221,237,249,1) 0%, rgba(255,255,255,1) 50%, rgba(221,237,255,1) 100%);;
+       
+}
+.xyz{
+    border:"2px solid red";
+    color: red;
+
+}
