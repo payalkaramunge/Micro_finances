@@ -1,135 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Admin</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../HTML/AdminDashBoard.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin dashboard</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
 </head>
-<body>
-
-
-<div class="sidebar close">
-    <div class="logo-details">
-      <i class='bx'></i>
-      <span class="logo_name">Menus</span>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="#">
-          <i class='bx bx-home'></i>
-          <span class="link_name">Home</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Home</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="icon-link">
-          <a href="#">
-            <i class='bx bx-bulb'></i>
-            <span class="link_name">Solutions</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Solutions</a></li>
-          <li><a href="#">Payments API</a></li>
-          <li><a href="#">Accounts APi</a></li>
-          <li><a href="#">Finance API</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="icon-link">
-          <a href="#">
-            <i class='bx bx-news'></i>
-            <span class="link_name">Posts</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
-          <li><a href="#">Recent</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Most Visited</a></li>
-        </ul>
-      </li>
-       <li>
-        <div class="icon-link">
-          <a href="#">
-            <i class='bx bx-file-find'></i>
-            <span class="link_name">Insights</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Insights</a></li>
-          <li><a href="#">Money Movement</a></li>
-          <li><a href="#">Enterprise Spotlight</a></li>
-          <li><a href="#">Financial Burnout</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bxs-credit-card' ></i>
-          <span class="link_name">Pricing</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Pricing</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-bar-chart'></i>
-          <span class="link_name">Chart</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Chart</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-compass'></i>
-          <span class="link_name">Explore</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Explore</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-cog'></i>
-          <span class="link_name">Setting</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <img src="https://sachinsamal.netlify.app/static/media/sachin-samal.d451ea9b3c53ed984bf7.png" alt="profileImg">
-          </div>
-          <div class="name-job">
-            <div class="profile_name">Admin name</div>
-            <div class="job">Designation</div>
-          </div>
-          <i class='bx bx-log-out'></i>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <section class="home-section">
-    <div class="home-content">
-      <i class='bx bx-menu'></i>
-      <span class="text">Micro Finance</span>
-    </div>
-  </section>
+<style>
+.prof-img-admin{
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
   
-<script src="../JS/AdminDashboard.js"></script>
-<script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+}
+
+@media screen and (max-width:991px) {
+  .Admin-photo{
+    position: fixed;
+    top: 3%;
+    left: 10%;
+    transform: translate(-13%,9%);
+
+
+  }
+  .mtul{
+    
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    transform: translate(-13%,9%);
+    
+  }
+}
+.edit-link{
+}
+
+
+</style>
+<body>
+  
+  <div class="container">
+    <nav class="navbar bg-body-tertiary navbar-expand-lg  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Loan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          
+          <div class="offcanvas-body">
+           
+  
+            <ul class="mtul navbar-nav justify-content-center flex-grow-1  mt-lg-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Remaining loan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Schemes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Due Dates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Monthly Details</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Group
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Add new member</a></li>
+                  <li><a class="dropdown-item" href="#">Edit Info Member</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Create Another Group</a></li>
+                  <li><a class="dropdown-item" href="#">Create Another</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="Admin-photo"><img src="../img/dummy.png" class="prof-img-admin " alt="">
+            <p class="edit-link">Edit Profile</p></div>
+            <div class="admin-photo">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+
+
+
+    
+  </div>
+  <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
