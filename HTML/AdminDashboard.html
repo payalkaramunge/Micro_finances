@@ -32,15 +32,28 @@
     
   }
 }
+@media screen and (min-width:992px) {
 .edit-link{
+visibility: hidden; 
+}
+.cust-navbar{
+            height: 100px;
+}
+.mtul{
+  padding-top: 3%;
+}
+.Admin-photo{
+  padding-top: 3%;
+  padding-bottom: 0%;
 }
 
+}
 
 </style>
 <body>
   
   <div class="container">
-    <nav class="navbar bg-body-tertiary navbar-expand-lg  fixed-top">
+    <nav class="navbar bg-info bg-opacity-75 navbar-expand-lg  fixed-top cust-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Loan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -56,12 +69,12 @@
           <div class="offcanvas-body">
            
   
-            <ul class="mtul navbar-nav justify-content-center flex-grow-1  mt-lg-3">
+            <ul class="mtul navbar-nav justify-content-center flex-grow-1  mt-4">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Remaining loan</a>
+                <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Schemes</a>
@@ -87,7 +100,7 @@
                 </ul>
               </li>
             </ul>
-            <div class="Admin-photo"><img src="../img/dummy.png" class="prof-img-admin " alt="">
+            <div class="Admin-photo"><img src="../img/dummy-profile-pic-300x300-1.png" class="prof-img-admin " alt="">
             <p class="edit-link">Edit Profile</p></div>
             <div class="admin-photo">
               
